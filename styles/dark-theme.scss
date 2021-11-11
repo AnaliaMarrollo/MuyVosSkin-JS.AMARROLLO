@@ -1,0 +1,190 @@
+@import "variables";
+
+body {
+    min-height: 100vh;
+    background-color: $color-blanco;
+}
+
+.nav {
+    &__contenedor {
+        background-color: $color-rosa-modo-dark;
+        box-shadow: $sombra-menu;
+    }
+
+    &__logo {
+        background-image: url(../images/muyvosnavrosa.png);
+    }
+        &__menu {
+            &-item {
+                &:hover {
+                    text-decoration: underline $color-rosa-fuerte-modo-dark .25rem;
+                    text-shadow: $sombra-items;
+                }
+            }
+        }
+}
+
+.nav__contenedor-menu {
+    background-color: $color-rosa-modo-dark;
+}
+
+.nav__contenedor-menu-hamburguesa {
+    color: $color-blanco;
+    background-color: darken($color-rosa-fuerte, 20%);
+    border: solid $color-rosa-fuerte .2rem;
+
+    &:hover {
+        text-shadow: $sombra-items;
+        color: darken($color-rosa-fuerte, 20%);
+        background-color: $color-blanco;
+        border: solid $color-rosa .2rem;
+    }
+}
+
+.fa-bars,
+.fa-times {
+    color: $color-blanco;
+
+    &:hover {
+        color: $color-rosa-fuerte;
+    }
+}
+
+.fa-shopping-cart {
+    color: darken($color-rosa-fuerte, 20%);
+
+    &:hover {
+        color: darken($color-rosa-fuerte, 30%);
+    }
+}
+
+#btn-carrito {
+    background-color: $color-rosa-modo-dark;
+}
+
+#cantidad-carrito {
+    background-color: $color-rosa-fuerte-modo-dark;
+    color: $color-negro;
+}
+
+.switch-modo-nocturno {
+    background-color:$color-rosa-modo-dark;
+}
+
+.fa-heart {
+    border: solid $color-rosa-fuerte-modo-dark .15rem;
+            color: $color-blanco;
+            background-color: darken($color-rosa-fuerte, 20%);
+
+    &:hover {
+        color: darken($color-rosa-fuerte, 10%);
+        background-color: $color-blanco;
+    }
+}
+
+.seccion {
+    box-shadow: $sombra-items;
+    background-color: $color-rosa-modo-dark;
+
+    &__titulo {
+        text-decoration: underline $color-rosa-fuerte-modo-dark .25rem;
+        text-transform: uppercase;
+    }
+}
+
+.contenedor__muestra-packs{
+    background-color: $color-rosa-modo-dark;
+}
+
+#btn-cerrar-pack, #btn-cerrar-tratamientos{
+     background-color: $color-rosa-modo-dark;
+     &:hover{
+         color: darken($color-rosa-fuerte, 30%);
+     }
+}
+
+.btn {
+    background-color: darken($color-rosa-fuerte, 20%);
+    &:hover {
+        background-color: darken($color-rosa-fuerte, 30%);
+    }
+}
+
+.select {
+    width: 50%;
+    border: solid darken($color-rosa-fuerte, 30%) .1rem;
+    color: $color-rosa-fuerte;
+    background-color: $color-rosa-modo-dark;
+}
+
+.checkbox {
+    background-color: $color-rosa-modo-dark;
+    accent-color: darken($color-rosa-fuerte, 20%);
+}
+
+.titulo--tratamiento {
+    color: $color-blanco;
+    background-color: $color-rosa-fuerte;
+}
+
+.precio--tratamiento {
+    color: darken($color-rosa-fuerte, 20%);
+}
+
+.contenedor {
+    &-contacto {
+        border: solid $color-rosa-fuerte .5rem;
+    }
+}
+
+.contacto {
+    &__datos {
+        color: darken($color-rosa-fuerte, 20%);
+    }
+
+    &__input {
+        color: darken($color-rosa-fuerte, 20%);
+        background-color: $color-rosa-modo-dark;
+        border: solid .01rem darken($color-rosa-fuerte, 20%);
+
+        &::placeholder {
+            color: darken($color-rosa-fuerte, 20%);
+        }
+
+        &--consulta {
+            &::placeholder {
+                color: darken($color-rosa-fuerte, 20%);
+            }
+        }
+    }
+}
+
+.validacion-contacto {
+    color:darken($color-rosa-fuerte, 20%);
+}
+
+.boton {
+    background-color: darken($color-rosa-fuerte, 20%);
+}
+
+.boton__whatsapp {
+    background-color: darken($color-rosa-fuerte, 20%);
+    color: $color-blanco;
+}
+
+.footer {
+    background-color: $color-rosa-modo-dark;
+
+    &__link {
+        color: $color-rosa-fuerte;
+
+        &-redes {
+            color: $color-blanco;
+            background-color: darken($color-rosa-fuerte, 20%);
+        }
+    }
+
+    &__copyright {
+        color: $color-rosa-fuerte;
+    }
+}

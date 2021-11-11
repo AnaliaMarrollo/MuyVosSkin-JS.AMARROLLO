@@ -1,0 +1,1653 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Playlist-Script';
+    src: url('../fonts/Playlist-Script.ttf.woff') format('woff'),
+        url('../fonts/Playlist-Script.ttf.svg') format('svg'),
+        url('../fonts/Playlist-Script.ttf.eot'),
+        url('Playlist-Script.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import "variables";
+@import "menu-hamburguesa";
+@import "cards-tratamientos";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(16deg, rgba(164, 6, 86, 1) 16%, rgba(246, 139, 183, 1) 84%);
+}
+
+header {
+    background-color: $color-rosa;
+}
+
+main {
+    min-height: 100vh;
+}
+
+// MENU NAVEGACIÓN--------------------------------------------//
+/*************************************************************/
+
+.nav {
+    &__contenedor {
+        width: 100%;
+        height: 10rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: $color-blanco;
+        box-shadow: $sombra-menu;
+        align-items: center;
+        z-index: 102;
+
+        &-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow-y: scroll;
+        }
+    }
+
+    &__logo {
+        height: 7rem;
+        width: 15rem;
+        background-image: url(../images/muyvosnav.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    &__menu {
+        &-item {
+            list-style: none;
+            text-transform: uppercase;
+            margin: 1rem 2rem;
+
+            &:hover {
+                text-decoration: underline $color-rosa .25rem;
+                text-shadow: $sombra-items;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $color-negro;
+        }
+
+        &-carrito {
+            list-style: none;
+        }
+
+    }
+}
+
+nav>a {
+    margin-top: 4rem;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.contenedor__nav-carrito-dark {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.fa-shopping-cart {
+    color: $color-rosa-fuerte;
+    font-size: 1.5rem;
+
+    &:hover {
+        color: darken($color-rosa-fuerte, 10%);
+    }
+}
+
+#btn-carrito {
+    margin-top: 1.5rem;
+    border: none;
+    background-color: $color-blanco;
+    cursor: pointer;
+}
+
+#cantidad-carrito {
+    position: relative;
+    left: 1.5rem;
+    bottom: 2.5rem;
+    border-radius: 100%;
+    padding: .35rem;
+    background-color: $color-rosa;
+    color: $color-negro;
+    font-weight: 500;
+    font-size: .7rem;
+}
+
+.switch-modo-nocturno {
+    margin-left: 3rem;
+    background-color: $color-blanco;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-heart {
+    background-color: $color-blanco;
+    color: $color-rosa-fuerte;
+    padding: .3rem;
+    border-radius: 2rem;
+    border: solid $color-rosa-fuerte .15rem;
+    margin-top: .25rem;
+
+    &:hover {
+        text-shadow: $sombra-items;
+        color: $color-blanco;
+        background-color: darken($color-rosa-fuerte, 20%);
+    }
+}
+
+// FIN DEL MENU DE NAVEGACION----------------------------------//
+
+
+// PROPIEDADES COMUNES SECCIONES------------------------------//
+/*************************************************************/
+
+.seccion {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-blanco;
+    box-shadow: $sombra-items;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin: 1rem .5rem;
+    text-align: center;
+
+    &__titulo {
+        color: $color-negro;
+        font-weight: 600;
+        font-size: 2rem;
+        padding: 1rem;
+        text-decoration: underline $color-rosa .25rem;
+        text-transform: uppercase;
+    }
+
+    &__texto {
+        width: 85%;
+        margin: auto;
+        text-align: justify;
+        padding: 1rem;
+    }
+}
+
+.btn {
+    width: 30%;
+    background-color: $color-rosa-fuerte;
+    border: none;
+    border-radius: .25rem;
+    color: $color-blanco;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: "Playlist-Script";
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color-rosa-fuerte, 10%);
+    }
+}
+
+span {
+    color: $color-negro;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-decoration: none;
+    text-decoration: underline $color-rosa .2rem;
+    margin-right: .5rem;
+}
+
+.span--redes-contacto {
+    color: $color-rosa-fuerte;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1rem;
+    &:hover {
+       color: darken($color-rosa-fuerte, 20%);
+    }
+}
+
+// SECCION PACKS----------------------------------------------//
+/*************************************************************/
+
+.seccion {
+    &__packs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.titulo-pasos-packs {
+    width: 50%;
+    margin: auto;
+    font-weight: bolder;
+    margin-bottom: .25rem;
+
+}
+
+ol {
+    width: 25%;
+    margin: auto;
+    text-align: left;
+}
+
+.pasos-packs::marker {
+    font-weight: bolder;
+    color: $color-rosa-fuerte;
+}
+
+.pasos-packs {
+    padding: .25rem;
+    margin: .5rem 0;
+    border-bottom: solid .1rem $color-rosa-fuerte;
+}
+
+.pasos-packs:last-child {
+    border: none;
+}
+
+.nota-packs {
+    text-decoration: none;
+    font-size: .7rem;
+    background-color: $color-rosa;
+}
+
+.contenedor {
+    &-tipo-de-piel {
+        padding: 1rem;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.card-lado-piel-sensible,
+.card-lado-piel-rosacea {
+    width: 12rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-out .5s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.card-lado-piel-normal,
+.card-lado-piel-seca,
+.card-lado-piel-grasa {
+    width: 12rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25rem;
+    transition: ease-out .5s;
+    // filter: grayscale(1.5);
+
+    &:hover {
+        filter: none;
+        transform: scale(1.1);
+    }
+}
+
+.card-lado-piel-normal {
+    grid-column: 1/2;
+    background-image: url(../images/piel-normal.jpg);
+}
+
+.card-lado-piel-seca {
+    grid-column: 2/3;
+    background-image: url(../images/piel-seca.jpg);
+}
+
+.card-lado-piel-grasa {
+    grid-column: 3/4;
+    background-image: url(../images/piel-grasa.jpg);
+}
+
+.card-lado-piel-sensible {
+    background-image: url(../images/piel-sensible.jpg);
+    border-radius: .25rem;
+}
+
+.card-lado-piel-rosacea {
+    background-image: url(../images/piel-rosacea.jpg);
+    border-radius: .25rem;
+}
+
+.btn-normal,
+.btn-seca,
+.btn-grasa,
+.btn-sensible,
+.btn-rosacea {
+    font-family: 'Playlist-Script';
+    font-weight: bolder;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: $color-negro;
+    text-shadow: $sombra-items;
+    background-color: $color-blanco-transparente;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: .25rem;
+    transition: ease-out .5s;
+
+    &:hover {
+        color: $color-blanco;
+        transform: scale(1.05);
+        text-shadow: $sombra-items;
+
+    }
+}
+
+.card-no-elegida {
+    filter: grayscale(1.5);
+
+    &:hover {
+        filter: grayscale(1.5);
+        transform: scale(1.1);
+    }
+}
+
+.card-elegida {
+    color: $color-rosa;
+}
+
+.contenedor-ver-packs {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn--lonely {
+    width: 20%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-tratamiento-sugerido {
+    width: 100%;
+    height: 20rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25rem;
+}
+
+.contenedor-tratamiento-sugerido-error{
+    background-image: url(../images/tratamiento-error.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+            border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo-posisiona-mouse {
+    font-weight: bolder;
+}
+
+.titulo-pack-datos-usuario {
+    color: $color-negro;
+    background-color: $color-blanco-transparente;
+    font-weight: bolder;
+   text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.contenedor {
+    &__muestra-packs {
+        position: relative;
+        width: 100%;
+        background-color: $color-blanco;
+        padding: 2rem;
+    }
+}
+
+.muestra-packs-oculto {
+    display: none;
+}
+
+
+#btn-cerrar-pack {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: $color-rosa-fuerte;
+    border: none;
+    background-color: white;
+    z-index: 203;
+
+    &:hover {
+        color: darken($color-rosa-fuerte, 10%);
+    }
+}
+
+// SECCION TRATAMIENTOS---------------------------------------//
+/*************************************************************/
+
+.contenedor {
+    &-tratamientos {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    &-botones {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.contenedor-oculto {
+    display: none;
+}
+
+
+#btn-cerrar-tratamientos {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: $color-rosa-fuerte;
+    background-color: $color-blanco;
+    border: none;
+}
+
+#btn-corporal,
+#btn-facial,
+#btn-makeup {
+    width: 100%;
+
+}
+
+// FORMULARIO CONTACTO------------------------------------------------//
+/*********************************************************************/
+
+.contenedor {
+    &-contacto {
+        width: 35%;
+        margin: auto;
+        padding: 1rem;
+        line-height: 1rem;
+        text-align: left;
+        border: solid $color-rosa-fuerte .5rem;
+    }
+}
+
+.contacto {
+    &__datos {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $color-rosa-fuerte;
+        &--suscripcion {
+           color: darken($color-rosa-fuerte, 10%); 
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 2rem;
+        color: $color-rosa-fuerte;
+        border: solid .01rem $color-rosa-fuerte;
+        border-radius: .25rem;
+        margin: .25rem 0;
+        padding: .5rem;
+
+        &::placeholder {
+            color: $color-rosa-fuerte;
+            font-weight: bolder;
+            padding: .25rem;
+        }
+
+        &:focus{
+            border: $color-rosa-fuerte solid;
+            box-shadow: $sombra-items;
+            outline: none;
+        }
+
+        &--select {
+            height: 2.5rem;
+        }
+
+        &--consulta {
+            height: 10rem;
+            margin-top: 1rem;
+            margin: 1rem 0;
+
+            &::placeholder {
+                color: $color-rosa-fuerte;
+            }
+        }
+
+        &--pref {
+            width: 65%;
+            height: 3rem;
+            margin-top: .5rem;
+            margin-left: .25rem;
+        }
+                    &--checkbox {
+                        height: 1rem;
+                        width: 1rem;
+                        margin-left: 1rem;
+                        accent-color: $color-rosa-fuerte;
+                        outline: none;
+
+                    }
+    }
+}
+
+.pref-contacto--llamada {
+    width: 30%;
+    height: 3rem;
+    visibility: hidden;
+    opacity: 0;
+
+    &-activa {
+        width: 30%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.boton {
+    background-color: $color-rosa-fuerte;
+    color: $color-blanco;
+    border: none;
+    font-family: 'Playlist-Script';
+    font-size: 1.2rem;
+    margin: 1rem 1rem 0 1rem;
+    width: 40%;
+    border-radius: .25rem;
+    padding: .75rem;
+    cursor: pointer;
+     &:hover {
+         background-color: darken($color-rosa-fuerte, 10%);
+     }
+}
+
+.contenedor-input{
+    position: relative;
+}
+
+.contenedor-input-suscripcion{
+    display: flex;
+    flex-direction: row;
+align-items: center;
+}
+
+.checkbox {
+    font-size: 1rem;
+    accent-color: $color-rosa-fuerte;
+    outline: none;
+}
+
+.validacion-contacto {
+position: absolute;
+top: .7rem;
+right: .7rem;
+color: $color-rosa-fuerte;
+&--select{
+    top:1.5rem;
+}
+visibility: hidden;
+opacity: 0;
+&:hover{
+  color: darken($color-rosa-fuerte, 20%);
+}
+}
+
+.validacion-contacto-activa {
+    visibility: visible;
+    opacity: 1;
+}
+
+.error-contacto {
+    margin: .5rem  auto;
+    font-size: .8rem;
+    text-align: left;
+    font-weight: 900;
+    padding: .15rem;
+    padding-left: .5rem ;
+    color: $color-blanco;
+    background-color: darken($color-rosa-fuerte, 20%);
+    border-radius: .25rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+.error-contacto-input {
+    padding: .3rem;
+    border: darken($color-rosa-fuerte, 20%) solid .25rem;
+    &:focus {
+        border: darken($color-rosa-fuerte, 20%) solid .25rem;
+        box-shadow: $sombra-items;
+        outline: none;
+    }
+}
+
+.fa-times {
+    color: darken($color-rosa-fuerte, 20%);
+}
+
+.fa-exclamation-circle {
+    font-size: 1rem;
+    color: $color-rosa;
+}
+
+.ok-contacto {
+    visibility: hidden;
+    opacity: 0;
+}
+
+// FIN FORMULARIO CONTACTO-----------------------------------------//
+/******************************************************************/
+
+
+// ESTILOS BOTON WHATSAPP----------------------------------------//
+/****************************************************************/
+
+.boton__whatsapp {
+    position: fixed;
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-rosa-fuerte;
+    color: $color-blanco;
+    border-radius: 4rem;
+    z-index: 99;
+    text-align: center;
+    &:hover{
+        background-color: darken($color-rosa-fuerte, 10%);
+        text-shadow: $sombra-items;
+    }
+
+    &--logo {
+        font-size: 2rem;
+        margin-top: .4rem;
+    }
+}
+
+// FIN ESTILOS LOGO DE WHATSAPP----------------------------------//
+/****************************************************************/
+
+// MODAL PARA CARRITO Y PROMOCIONES------------------------------//
+/****************************************************************/
+
+//MODAL CARRITO--------------------------------------------------//
+/****************************************************************/
+
+.contenedor {
+    &__modal-carrito {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 202;
+                    overflow-y: scroll;
+    }
+}
+
+.modal__carrito {
+    position: relative;
+    width: 70%;
+    min-height: 10vh;
+    background-color: $color-blanco;
+    border-radius: .25rem;
+    padding: 2rem;
+    transition: all .5s;
+}
+
+#btn-cerrar-carrito {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: $color-rosa-fuerte;
+    border: none;
+    background-color: white;
+
+    &:hover {
+        color: darken($color-rosa-fuerte, 10%);
+    }
+}
+
+#btn-comprar {
+    width: 7rem;
+    height: 4rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.modal__carrito p {
+    color: $color-negro;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.modal__carrito p:first-child {
+    text-decoration: underline $color-rosa .2rem;
+    text-transform: uppercase;
+}
+
+.precio {
+    width: 95%;
+    border-top: solid $color-rosa-fuerte .2rem;
+    padding-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+#contenedor__carrito {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.tratamiento-en-carrito {
+    display: flex;
+    flex-direction: row;
+    padding: .3rem;
+    border-bottom: solid .1rem $color-negro;
+}
+
+.tratamiento-en-carrito p {
+    margin-right: .5rem;
+}
+
+.tratamiento-en-carrito p:first-child {
+    font-family: 'Playlist-Script';
+    text-decoration: none;
+    color: $color-rosa-fuerte;
+}
+
+.tratamiento-en-carrito:last-child {
+    border-bottom: none;
+}
+
+.btn-eliminar,
+.btn-sumar-carrito,
+.btn-restar-carrito {
+    width: 2rem;
+    height: 1.5rem;
+    border: none;
+    background-color: $color-blanco;
+}
+
+.btn-sumar-carrito,
+.btn-restar-carrito {
+    border: darken($color-rosa-fuerte, 20%) solid .1rem;
+    border-radius: 25rem;
+}
+
+.btn-sumar-carrito {
+    margin-right: .5rem;
+}
+
+.fa-minus,
+.fa-plus,
+.fa-trash-alt {
+    color: darken($color-rosa-fuerte, 20%);
+    font-size: 1rem;
+
+    &:hover {
+        color: $color-rosa-fuerte;
+    }
+}
+
+//MODAL PROMOCIONES----------------------------------------------//
+/****************************************************************/
+
+.contenedor {
+    &__modal-promociones {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.modal__promociones {
+    position: relative;
+    width: 30%;
+    height: 15rem;
+    background-color: $color-blanco;
+    border-radius: .25rem;
+    padding: 5rem;
+}
+
+.form__modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#btn-cerrar-promociones {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: $color-rosa-fuerte;
+    border: none;
+    background-color: white;
+
+    &:hover {
+        color: darken($color-rosa-fuerte, 10%);
+    }
+}
+
+
+
+//ACTIVAR MODAL---------------------------------------------------//
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+//ESTILOS FOOTER -----------------------------------------------//
+/****************************************************************/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-blanco;
+    box-shadow: $sombra-footer;
+    padding-top: 1rem;
+
+    &__contenedor {
+        padding: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 600;
+        color: $color-rosa;
+
+        &-redes {
+            color: $color-blanco;
+            background-color: $color-rosa;
+            border-radius: .25rem;
+            padding: .5rem;
+            font-size: 1rem;
+        }
+    }
+
+    &__copyright {
+        font-size: .8rem;
+        color: $color-rosa;
+    }
+}
+
+// FIN ESTILOS FOOTER -------------------------------------------//
+/****************************************************************/
+
+/*******************************************************************************************************************************/
+
+/*-- ADAPTACION A DISPOSITIVOS -----------*/
+
+@media only screen and (max-width: 360px) {
+     .nav {
+         &__contenedor {
+             height: 15rem;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             grid-template-rows: 1fr 1fr;
+
+             &-menu {
+                 justify-content: flex-start;
+             }
+         }
+
+         &__menu-item {
+             font-size: 1rem;
+         }
+     }
+
+     nav>a {
+         margin-top: .5rem;
+         grid-column: 1/2;
+         grid-row: 1/2;
+     }
+
+     .contenedor__nav-carrito-dark {
+         grid-column: 1/4;
+         grid-row: 3/4;
+     }
+
+     .seccion {
+         min-height: 20vh;
+     }
+
+     .titulo-pasos-packs {
+         width: 100%;
+     }
+
+     ol {
+         width: 90%;
+         margin: auto;
+         margin-left: 1.7rem;
+     }
+
+     .contenedor-ver-packs {
+         width: 90%;
+         margin: auto;
+         justify-content: center;
+     }
+
+     .btn--lonely {
+         width: 70%;
+         margin: auto;
+         font-size: 1.2rem;
+     }
+
+     .contenedor-tratamiento-sugerido-error {
+         width: 22rem;
+         height: 19rem;
+     }
+
+     .contenedor {
+         &-botones {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+         }
+     }
+
+     #btn-corporal,
+     #btn-facial,
+     #btn-makeup {
+         font-size: 1.2rem;
+     }
+
+     //carrito
+     .modal__carrito {
+         position: absolute;
+         top: 10rem;
+         width: 95%;
+         margin: auto;
+     }
+
+     .modal__carrito p {
+         font-size: .8rem;
+     }
+
+     #contenedor__carrito {
+         width: 100%;
+     }
+
+     #btn-comprar-carrito {
+         width: 50%;
+         margin: auto;
+         font-size: 1rem;
+     }
+
+     .tratamiento-en-carrito {
+         display: flex;
+         flex-direction: row;
+         padding: .3rem;
+         border-bottom: solid .1rem $color-negro;
+     }
+
+     .btn-eliminar,
+     .btn-sumar-carrito,
+     .btn-restar-carrito {
+         width: 2rem;
+         height: 1.5rem;
+         border: none;
+         background-color: $color-blanco;
+     }
+
+     .btn-sumar-carrito,
+     .btn-restar-carrito {
+         border: darken($color-rosa-fuerte, 20%) solid .1rem;
+         border-radius: 25rem;
+     }
+
+     .btn-sumar-carrito {
+         margin-right: .5rem;
+     }
+
+     .btn-restar-carrito {
+         margin-right: .5rem;
+     }
+
+     //contacto
+     .contenedor {
+         &-contacto {
+             width: 100%;
+             margin: auto;
+         }
+     }
+
+     .boton {
+         width: 95%;
+         margin: auto;
+         margin-top: .5rem;
+         margin-left: .5rem;
+
+     }
+
+     .contacto {
+         &__input {
+             &--pref {
+                 width: 95%;
+             }
+         }
+     }
+
+     .pref-contacto--llamada {
+         width: 90%;
+
+         &-activa {
+             width: 90%;
+         }
+     }
+
+     //CARDS!!!!
+     #card-tratamientos {
+         height: 12rem;
+         width: 19rem;
+         margin: .2rem auto;
+     }
+
+     .detalle-tratamientos {
+         height: 100%;
+         width: 50%;
+         padding: .5rem;
+     }
+
+     #card-tratamientos .detalle-tratamientos h1 {
+         font-size: 1.3rem;
+     }
+
+     #card-tratamientos .detalle-tratamientos>p {
+         font-size: 1rem;
+     }
+
+
+     .boton-card span {
+         padding: 0 .2rem;
+         font-size: 1rem;
+         border-radius: .25rem;
+     }
+
+     .boton-card {
+         width: 5rem;
+         margin: 0 .5rem;
+     }
+
+     .info {
+         font-size: 1rem;
+         padding: 1.3rem;
+     }
+
+     .info h2 {
+         font-size: .7rem;
+         line-height: 1rem;
+         text-decoration: none;
+         text-align: left;
+         font-weight: bolder;
+         text-decoration: underline $color-rosa .15rem;
+
+     }
+
+     .info h2:last-child {
+         font-size: .7rem;
+         text-decoration: none;
+         text-align: left;
+         font-weight: bolder;
+     }
+
+     .info h4 {
+         font-size: .7rem;
+         font-weight: bolder;
+         line-height: 1rem;
+     }
+
+     #btn-cerrar-tratamientos {
+         top: -1rem;
+         right: -1rem;
+     }
+}
+
+@media only screen and (min-width: 360px) {
+    .nav {
+        &__contenedor {
+            height: 15rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            &-menu{
+                justify-content: flex-start;
+            }
+        }
+        &__menu-item{
+            font-size: 1rem;
+        }
+    }
+
+    nav>a {
+        margin-top: .5rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .contenedor__nav-carrito-dark {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+    .seccion {
+        min-height: 20vh;
+    }
+
+    .titulo-pasos-packs {
+        width: 100%;
+    }
+
+    ol {
+        width: 90%;
+        margin: auto;
+        margin-left: 1.7rem;
+    }
+
+    .contenedor-ver-packs {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .btn--lonely {
+        width: 70%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    .contenedor-tratamiento-sugerido-error {
+        width: 22rem;
+        height: 19rem;
+    }
+
+    .contenedor {
+        &-botones {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    #btn-corporal, #btn-facial, #btn-makeup {
+        font-size: 1.2rem;
+    }
+
+    //carrito
+    .modal__carrito {
+        position: absolute;
+        top: 10rem;
+        width: 95%;
+        margin: auto;
+    }
+
+    .modal__carrito p {
+        font-size: .8rem;
+    }
+
+    #contenedor__carrito {
+        width: 100%;
+    }
+
+    #btn-comprar-carrito {
+        width: 50%;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .tratamiento-en-carrito {
+        display: flex;
+        flex-direction: row;
+        padding: .3rem;
+        border-bottom: solid .1rem $color-negro;
+    }
+
+    .btn-eliminar,
+    .btn-sumar-carrito,
+    .btn-restar-carrito {
+        width: 2rem;
+        height: 1.5rem;
+        border: none;
+        background-color: $color-blanco;
+    }
+
+    .btn-sumar-carrito,
+    .btn-restar-carrito {
+        border: darken($color-rosa-fuerte, 20%) solid .1rem;
+        border-radius: 25rem;
+    }
+
+    .btn-sumar-carrito {
+        margin-right: .5rem;
+    }
+
+    .btn-restar-carrito {
+        margin-right: .5rem;
+    }
+
+//contacto
+    .contenedor {
+        &-contacto {
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    .boton {
+        width: 95%;
+        margin: auto;
+        margin-top: .5rem;
+        margin-left: .5rem;
+
+    }
+
+    .contacto {
+        &__input {
+            &--pref {
+                width: 95%;
+            }
+        }
+    }
+
+    .pref-contacto--llamada {
+        width: 90%;
+
+        &-activa {
+            width: 90%;
+        }
+    }
+
+    //CARDS!!!!
+    #card-tratamientos {
+        height: 12rem;
+        width: 19rem;
+        margin: .2rem auto;
+    }
+
+    .detalle-tratamientos {
+        height: 100%;
+        width: 50%;
+        padding: .5rem;
+    }
+
+    #card-tratamientos .detalle-tratamientos h1 {
+        font-size: 1.3rem;
+    }
+
+    #card-tratamientos .detalle-tratamientos>p {
+        font-size: 1rem;
+    }
+
+
+    .boton-card span {
+        padding: 0 .2rem;
+        font-size: 1rem;
+        border-radius: .25rem;
+    }
+
+    .boton-card {
+        width: 5rem;
+        margin: 0 .5rem;
+    }
+
+    .info {
+        font-size: 1rem;
+        padding: 1.3rem;
+    }
+
+    .info h2 {
+        font-size: .7rem;
+        line-height: 1rem;
+        text-decoration: none;
+        text-align: left;
+        font-weight: bolder;
+        text-decoration: underline $color-rosa .15rem;
+
+    }
+
+       .info h2:last-child {
+           font-size: .7rem;
+           text-decoration: none;
+           text-align: left;
+           font-weight: bolder;
+       }
+
+       .info h4 {
+            font-size: .7rem;
+            font-weight: bolder;
+            line-height: 1rem;
+       }
+
+    #btn-cerrar-tratamientos {
+        top: -1rem;
+        right: -1rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px) {
+   .nav {
+       &__menu-item {
+           font-size: 1.6rem;
+       }
+   }
+
+   &__menu-item {
+       font-size: 1rem;
+   }
+
+    .titulo-pasos-packs {
+        width: 90%;
+    }
+
+    ol {
+        width: 80%;
+        margin-left: 3rem;
+    }
+
+    .btn--lonely {
+        width: 30%;
+    }
+
+
+    .contenedor {
+        &-botones {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+        #btn-corporal,
+        #btn-facial,
+        #btn-makeup {
+            width: 30%;
+            margin: auto;
+        }
+
+    // .btn {
+    //     width: 100%;
+    // }
+
+    .contenedor {
+        &-contacto {
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    .boton {
+        width: 95%;
+        margin: auto;
+        margin-top: .5rem;
+        margin-left: .5rem;
+
+    }
+
+    .contacto {
+        &__input {
+            &--pref {
+                width: 95%;
+            }
+        }
+    }
+
+    .pref-contacto--llamada {
+        width: 95%;
+
+        &-activa {
+            width: 95%;
+            margin-left: .2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .btn--lonely{
+        width: 40%;
+    }
+
+    #btn-cerrar-pack{
+        top: 0rem;
+        right: .5rem;
+    }
+        #btn-corporal, #btn-makeup, #btn-facial{
+            font-size: 1rem;
+        }
+            .contenedor-tratamiento-sugerido-error {
+                width: 30rem;
+                height: 20rem;
+            }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .nav {
+        &__contenedor {
+            width: 100%;
+            height: 10rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    nav>a {
+        margin-top: .5rem;
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    .contenedor__nav-carrito-dark {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    ol {
+        width: 75%;
+        margin: auto;
+    }
+
+    .modal__carrito p {
+        font-size: 1rem;
+    }
+
+    #btn-comprar-carrito {
+        width: 30%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+
+    #contenedor__carrito {
+        width: 85%;
+        margin: auto;
+    }
+
+    .btn-sumar-carrito {
+        margin-right: .5rem;
+    }
+
+    .btn-restar-carrito {
+        margin-right: 0;
+    }
+
+    .btn--lonely{
+        width: 30%;
+        margin: auto;
+    }
+
+   #btn-corporal,
+   #btn-makeup,
+   #btn-facial {
+       font-size: 1.2rem;
+   }
+
+    .contenedor {
+        &-contacto {
+            width: 65%;
+            margin: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .titulo-pasos-packs {
+        width: 50%;
+        margin: auto;
+    }
+
+    ol {
+        width: 50%;
+        margin: auto;
+    }
+
+    .btn--lonely{
+        width: 30%;
+        margin: auto;
+    }
+.contenedor-tratamiento-sugerido-error{
+                width: 30rem;
+                height: 20rem;
+}
+
+    //CARDS!!!!
+    #card-tratamientos {
+        height: 18rem;
+        width: 29rem;
+        margin: 1rem .25rem;
+    }
+
+    .detalle-tratamientos {
+        height: 100%;
+        width: 50%;
+        padding: 1rem;
+    }
+
+    #card-tratamientos .detalle-tratamientos h1 {
+        font-size: 1.5rem;
+    }
+
+    #card-tratamientos .detalle-tratamientos>p {
+        font-size: 1.2rem;
+    }
+
+    .boton-card span {
+        padding: .65rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .boton-card {
+        width: 10rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info {
+        font-size: 1rem;
+        padding: 1.3rem;
+    }
+
+    .info h2 {
+        font-size: 1rem;
+        line-height: 1rem;
+        text-decoration: underline $color-rosa .15rem;
+        text-align: left;
+        font-weight: bolder;
+    }
+
+    .info h2:last-child {
+        font-size: .8rem;
+        text-decoration: none;
+        font-weight: bolder;
+        text-align: left;
+    }
+
+    .info h4 {
+        font-size: .8rem;
+        text-decoration: none;
+        font-weight: bolder;
+        text-align: left;
+    }
+
+    .contenedor {
+        &-contacto {
+            width: 50%;
+            margin: auto;
+        }
+    }
+}
+
+/*----- FIN ADAPTACION A DISPOSITIVOS -----*/

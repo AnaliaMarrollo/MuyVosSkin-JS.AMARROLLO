@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "tratamiento": "Limpieza",
+    "tipo": "Facial",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-limpieza.jpg",
+    "descripcion": "Renová tu piel con una limpieza facial profunda. ✨ Es muy importante respetar cada biotipo y fototipo de piel y realizar una limpieza adecuada acorde a las necesidades de cada paciente ✨",
+    "precio": 1200
+  },
+  {
+    "id": 2,
+    "tratamiento": "Hidratación",
+    "tipo": "Facial",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-hidratacion.jpg",
+    "descripcion": "Es muy importante mantener la piel tanto HUMECTADA como HIDRATADA. Te recomiendo combinar este tratamiento con una sesión de limpieza",
+    "precio": 1000
+  },
+  {
+    "id": 3,
+    "tratamiento": "Rutina",
+    "tipo": "Facial",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-rutina.jpg",
+    "descripcion": "A través de una consulta, presencial o virtual, armamos una rutina diaria de día y de noche 100% personalizada de acuerdo tu tipo de piel y necesidades",
+    "precio": 1000
+  },
+  {
+    "id": 4,
+    "tratamiento": "Acne",
+    "tipo": "Facial",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-acne.jpg",
+    "descripcion": "Combinamos una limpieza facial profunda con extracción de comedones, puntos negros y espinillas.",
+    "precio": 1500
+  },
+  {
+    "id": 5,
+    "tratamiento": "Hiperpigmentacion",
+    "tipo": "Facial",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-hiperpigmentacion.png",
+    "descripcion": "Opciones de tratamiento: terapia con láser, luz pulsada intensa, exfoliaciones químicas, microdermoabrasión. En la consulta analizaremos el proceso, los posibles efectos secundarios y el procedimiento conveniente para vos.",
+    "precio": 3500
+  },
+  {
+    "id": 6,
+    "tratamiento": "Dermaplaning",
+    "tipo": "Facial",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-dermaplaning.jpeg",
+    "descripcion": "Es una técnica que consiste en realizar una exfoliación en la capa más superficial de la piel con bisturí, estimulando la renovación celular. Es una técnica segura y sencilla con la cual se logran excelentes resultados 👉 Se utiliza material esterilizado y descartable.",
+    "precio": 4000
+  },
+  {
+    "id": 7,
+    "tratamiento": "Celulitis",
+    "tipo": "Corporal",
+    "sesiones": "4 sesiones de Velashape",
+    "img": "./images/tratamiento-celulitis.jpg",
+    "descripcion": "Este tratamiento no invasivo tiene un sistema que combina infrarrojos, radiofrecuencia, masaje de rodillos y vacumterapia. Actúa tanto en las capas de piel más profundas así como también en las más superficiales ofreciendo una reducción medible en grasa, circunferencia y en celulitis.",
+    "precio": 4500
+  },
+  {
+    "id": 8,
+    "tratamiento": "Depilacion",
+    "tipo": "Corporal",
+    "sesiones": "1 sesión zona a eleción + 1 sesión zona chica son Soprano Ice",
+    "img": "./images/tratamiento-depilacion.jpg",
+    "descripcion": "Además de eliminar el vello de la zona elegida, ¿sabías que combate la foliculitis y aclara las zonas manchadas que deja la depilación con cera?",
+    "precio": 5000
+  },
+  {
+    "id": 9,
+    "tratamiento": "Maderoterapia",
+    "tipo": "Corporal",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-maderoterapia.jpg",
+    "descripcion":"Consiste en aplicar un masaje utilizando elementos de madera especialmente diseñados para equilibrar la energía, reafirmar y tonificar el cuerpo y, combatir la celulitis",
+    "precio": 1750
+  },
+  {
+    "id": 10,
+    "tratamiento": "Reductor",
+    "tipo": "Corporal",
+    "sesiones": "2 sesiones Ultracavitación",
+    "img": "./images/tratamiento-reductor.jpg",
+    "descripcion": "La ultracavitación es una técnica reductora cuya principal finalidad es eliminar los depósitos de grasa acumulados en el cuerpo de una manera no invasiva, a través de la aplicación de ultrasonidos.",
+    "precio": 2500
+  },
+  {
+    "id": 11,
+    "tratamiento": "Automaquillaje",
+    "tipo": "Makeup",
+    "sesiones": "2.30hs teórico práctico",
+    "img": "./images/tratamiento-auto-makeup.jpg",
+    "descripcion": "Trucos y pasos para un makeup completo. Taller teórico-práctico. Protocolo de limpieza profunda",
+    "precio": 5500
+  },
+  {
+    "id": 12,
+    "tratamiento": "Perfilado",
+    "tipo": "Makeup",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-perfilado.jpg",
+    "descripcion": "El perfilado de cejas es una técnica que se lleva a cabo para delinear las mismas y resaltar tus mejores rasgos",
+    "precio": 1000
+  },
+  {
+    "id": 13,
+    "tratamiento": "Lifting",
+    "tipo": "Makeup",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-lifting.jpg",
+    "descripcion": "Es un tratamiento para las pestañas naturales para levantar desde la raiz y dar curvatura y color a la pestaña natural",
+    "precio": 900
+  },
+  {
+    "id": 14,
+    "tratamiento": "Makeup",
+    "tipo": "Makeup",
+    "sesiones": "1 sesión",
+    "img": "./images/tratamiento-makeup.jpg",
+    "descripcion": "Makeup social, para eventos y/o fiestas. ¿Sos la novia? Enviame una consulta para más asesoramiento",
+    "precio": 3500
+  },
+  {
+    "id": 15,
+    "tratamiento": "Máscara Descongestiva",
+    "tipo": "Máscaras",
+    "sesiones": "",
+    "img": "",
+    "descripcion": "Máscara Descongestiva",
+    "precio": 1900
+  },
+  {
+    "id": 16,
+    "tratamiento": "Máscara Nutritiva",
+    "tipo": "Máscaras",
+    "sesiones": "",
+    "img": "",
+    "descripcion": "Máscara Nutritiva",
+    "precio": 1500
+  },
+  {
+    "id": 17,
+    "tratamiento": "Máscara Hidratante",
+    "tipo": "Máscaras",
+    "sesiones": "",
+    "img": "",
+    "descripcion": "Máscara Hidratante",
+    "precio": 2200
+  }
+]

@@ -1,0 +1,209 @@
+body {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.nav__contenedor {
+  background-color: #fce1f0;
+  -webkit-box-shadow: 0rem 0.2rem 0.25rem #363636;
+          box-shadow: 0rem 0.2rem 0.25rem #363636;
+}
+
+.nav__logo {
+  background-image: url(../images/muyvosnavrosa.png);
+}
+
+.nav__menu-item:hover {
+  -webkit-text-decoration: underline #fcaff0 0.25rem;
+          text-decoration: underline #fcaff0 0.25rem;
+  text-shadow: 0 0.1rem 0.25rem #363636;
+}
+
+.nav__contenedor-menu {
+  background-color: #fce1f0;
+}
+
+.nav__contenedor-menu-hamburguesa {
+  color: white;
+  background-color: #bc266c;
+  border: solid #e068a0 0.2rem;
+}
+
+.nav__contenedor-menu-hamburguesa:hover {
+  text-shadow: 0 0.1rem 0.25rem #363636;
+  color: #bc266c;
+  background-color: white;
+  border: solid #E8C3D4 0.2rem;
+}
+
+.fa-bars,
+.fa-times {
+  color: white;
+}
+
+.fa-bars:hover,
+.fa-times:hover {
+  color: #e068a0;
+}
+
+.fa-shopping-cart {
+  color: #bc266c;
+}
+
+.fa-shopping-cart:hover {
+  color: #911e54;
+}
+
+#btn-carrito {
+  background-color: #fce1f0;
+}
+
+#cantidad-carrito {
+  background-color: #fcaff0;
+  color: #222222;
+}
+
+.switch-modo-nocturno {
+  background-color: #fce1f0;
+}
+
+.fa-heart {
+  border: solid #fcaff0 0.15rem;
+  color: white;
+  background-color: #bc266c;
+}
+
+.fa-heart:hover {
+  color: #d73e85;
+  background-color: white;
+}
+
+.seccion {
+  -webkit-box-shadow: 0 0.1rem 0.25rem #363636;
+          box-shadow: 0 0.1rem 0.25rem #363636;
+  background-color: #fce1f0;
+}
+
+.seccion__titulo {
+  -webkit-text-decoration: underline #fcaff0 0.25rem;
+          text-decoration: underline #fcaff0 0.25rem;
+  text-transform: uppercase;
+}
+
+.contenedor__muestra-packs {
+  background-color: #fce1f0;
+}
+
+#btn-cerrar-pack, #btn-cerrar-tratamientos {
+  background-color: #fce1f0;
+}
+
+#btn-cerrar-pack:hover, #btn-cerrar-tratamientos:hover {
+  color: #911e54;
+}
+
+.btn {
+  background-color: #bc266c;
+}
+
+.btn:hover {
+  background-color: #911e54;
+}
+
+.select {
+  width: 50%;
+  border: solid #911e54 0.1rem;
+  color: #e068a0;
+  background-color: #fce1f0;
+}
+
+.checkbox {
+  background-color: #fce1f0;
+  accent-color: #bc266c;
+}
+
+.titulo--tratamiento {
+  color: white;
+  background-color: #e068a0;
+}
+
+.precio--tratamiento {
+  color: #bc266c;
+}
+
+.contenedor-contacto {
+  border: solid #e068a0 0.5rem;
+}
+
+.contacto__datos {
+  color: #bc266c;
+}
+
+.contacto__input {
+  color: #bc266c;
+  background-color: #fce1f0;
+  border: solid 0.01rem #bc266c;
+}
+
+.contacto__input::-webkit-input-placeholder {
+  color: #bc266c;
+}
+
+.contacto__input:-ms-input-placeholder {
+  color: #bc266c;
+}
+
+.contacto__input::-ms-input-placeholder {
+  color: #bc266c;
+}
+
+.contacto__input::placeholder {
+  color: #bc266c;
+}
+
+.contacto__input--consulta::-webkit-input-placeholder {
+  color: #bc266c;
+}
+
+.contacto__input--consulta:-ms-input-placeholder {
+  color: #bc266c;
+}
+
+.contacto__input--consulta::-ms-input-placeholder {
+  color: #bc266c;
+}
+
+.contacto__input--consulta::placeholder {
+  color: #bc266c;
+}
+
+.validacion-contacto {
+  color: #bc266c;
+}
+
+.boton {
+  background-color: #bc266c;
+}
+
+.boton__whatsapp {
+  background-color: #bc266c;
+  color: white;
+}
+
+.footer {
+  background-color: #fce1f0;
+}
+
+.footer__link {
+  color: #e068a0;
+}
+
+.footer__link-redes {
+  color: white;
+  background-color: #bc266c;
+}
+
+.footer__copyright {
+  color: #e068a0;
+}
+/*# sourceMappingURL=dark-theme.css.map */

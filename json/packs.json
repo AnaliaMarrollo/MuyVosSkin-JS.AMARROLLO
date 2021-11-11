@@ -1,0 +1,88 @@
+[
+  {
+    "id": 18,
+    "nombrePack": "Pack Piel Normal y Sensible",
+    "tratamientosPack": [
+      "Protocolo limpieza facial",
+      "Limpieza Profunda",
+      "Máscara nutritiva",
+      "Máscara descongestiva"
+    ],
+    "img": "./images/pack-piel-normal-sensible.jpg",
+    "precioPack": 4600
+  },
+
+  {
+    "id": 19,
+    "nombrePack": "Pack Piel Sensible y con Rosacea",
+    "tratamientosPack": [
+      "Protocolo limpieza facial",
+      "Limpieza e Hidratación",
+      "Máscara descongestiva"
+    ],
+    "img": "./images/pack-piel-sensible y rosacea.jpg",
+    "precioPack": 4100
+  },
+
+  {
+    "id": 20,
+    "nombrePack": "Pack Piel Normal",
+    "tratamientosPack": [
+      "Protocolo limpieza facial",
+      "Dermaplaning",
+      "Máscara nutritiva"
+    ],
+    "img": "./images/pack-piel-normal.png",
+    "precioPack": 5500
+  },
+
+  {
+    "id": 21,
+    "nombrePack": "Piel Seca y Sensible",
+    "tratamientosPack": [
+      "Protocolo limpieza facial",
+      "Limpieza e Hidratación",
+      "Máscara nutritiva"
+    ],
+    "img": "./images/pack-piel-seca-sensible.jpg",
+    "precioPack": 3700
+  },
+
+  {
+    "id": 22,
+    "nombrePack": "Pack Piel Seca",
+    "tratamientosPack": [
+      "Protocolo limpieza facial",
+      "Limpieza Profunda",
+      "Máscara nutritiva",
+      "Máscara hidratante"
+    ],
+    "img": "./images/pack-piel-seca.jpg",
+    "precioPack": 4900
+  },
+
+  {
+    "id": 23,
+    "nombrePack": "Pack Piel Grasa y Sensible",
+    "tratamientosPack": [
+      "Protocolo limpieza facial",
+      "Limpieza",
+      "Máscara descongestiva",
+      "Tratamiento Acné"
+    ],
+    "img": "./images/pack-piel-grasa-sensible.jpg",
+    "precioPack": 4600
+  },
+
+  {
+    "id": 24,
+    "nombrePack": "Pack Piel Grasa",
+    "tratamientosPack": [
+      "Protocolo limpieza facial",
+      "Limpieza Profunda",
+      "Tratamiento Acné"
+    ],
+    "img": "./images/pack-piel-grasa.jpg",
+    "precioPack": 2700
+  }
+]

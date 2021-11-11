@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------Etiquetas meta SEO-------- -->
+    <meta name="description" content="Marisel Gullotta. Dermatocosmiatra (Mat.956) y maquilladora profesional.">
+    <meta name="keywords"
+        content="cosmiatra, dermocosmiatra, makeup, maquillaje, maquilladora, tratamientos corporales, tratamientos faciales, depilación definitiva, productos faciales, asesoramiento">
+    <meta name="ROBOTS" content="index, follow">
+    <meta name="ROBOTS" content="all">
+    <meta name="Language" content="Spanish">
+    <meta name="resource-type" content="Document">
+    <meta name="doc-type" content="web page">
+    <meta name="GOOGLEBOT" content="index, follow, all">
+    <meta name="distribution" content="Global">
+    <meta name="city" content="Buenos Aires">
+    <meta name="country" content="Argentina">
+    <meta name="author" content="Analia Marrollo">
+    <meta name="title"
+        content="Soy Marisel Gullotta, en este sitio encontrarás todos los tratamientos, servicios y productos que ofrezco.">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Icono solapa navegador -->
+    <link rel="shorcut icon" href="./images/muyvosnav-favicon.jpg">
+    <!-- Estilos -->
+    <link rel="stylesheet" id="estilos" href="./styles/styles.css">
+    <link rel="stylesheet" id="dark">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CDN JQUERY -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- CDN SWEET ALERT -->
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JS -->
+    <script defer src="./js/datos.js"></script>
+    <script defer src="./js/carrito.js"></script>
+    <script defer src="./js/nav.js"></script>
+    <script defer src="./js/packs.js"></script>
+    <script defer src="./js/tratamientos.js"></script>
+    <script defer src="./js/contacto.js"></script>
+    <!-- <script defer src="./js/app.js"></script> -->
+    <!-- Titulo solapa navegador -->
+    <title>Muy Vos Skin and make up</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- BARRA DE NAVEGACIÓN -->
+
+        <nav class="nav__contenedor">
+
+            <!-- LOGO -->
+
+            <a href="index.html">
+                <div class="nav__logo" title="logo Muy Vos Skin"></div>
+            </a>
+
+            <!-- CONTENEDOR CARRITO Y MODO DARK -->
+
+            <div class="contenedor__nav-carrito-dark">
+                <button class="nav__menu-carrito" id="btn-carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div id="cantidad-carrito">0</div>
+                </button>
+                <button class="switch-modo-nocturno light">MODO DARK <i class="far fa-heart"></i></button>
+            </div>
+
+            <!-- MENU HAMBURGUESA -->
+
+            <div class="nav__menu-hamburguesa"></div>
+            <div class="nav__contenedor-menu-hamburguesa"><i id="icono-menu-hamburguesa" class="fas fa-bars"></i>
+            </div>
+            <div class="nav__contenedor-menu">
+                <a href="index.html" class="nav__menu-link">
+                    <div class="nav__menu-item">Inicio</div>
+                </a>
+                <a href="index.html#packs" class="nav__menu-link">
+                    <div class="nav__menu-item">Packs</div>
+                </a>
+                <a href="index.html#tratamientos" class="nav__menu-link">
+                    <div class="nav__menu-item">Tratamientos</div>
+                </a>
+                <a href="index.html#contacto" class="nav__menu-link">
+                    <div class="nav__menu-item">Contacto</div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- SECCION INICIO -->
+
+        <section class="seccion seccion__inicio" id="inicio">
+            <h1 class="seccion__titulo">MUY VOS SKIN</h1>
+            <p class="seccion__texto"> ¡Hola bell@! Soy Marisel, dermatocosmiatra y maquilladora profesional.
+                En este sitio encontrarás algunos de los tratamientos que podés
+                realizarte conmigo en el consultorio, packs armados según tu tipo de piel, makeup y belleza.
+                Cada piel es distitna y requiere productos diferentes. Para un asesoramiento más personalizado y saber
+                que productos van a ayudarte a mejorar tu piel
+                podés enviarnos un Whatsapp <span><a
+                        href="https://api.whatsapp.com/send?phone=5491158759917&text=¡Hola!%20Tengo%20una%20consulta%20sobre..."
+                        target="_blank" title="Whatsapp link"><i class="fab fa-whatsapp span--redes-contacto"></i></a></span>,
+                contactarnos a través de las
+                redes sociales <span><a href="https://instagram.com/muyvoskin" target="_blank" title="Instagram link"><i
+                            class="fab fa-instagram span--redes-contacto"></i></a></span>o enviarnos un mensaje a través de
+                nuestro <span><a class="span--redes-contacto" href="index.html#contacto">formulario de
+                        contacto</a></span></p>
+        </section>
+
+        <!-- SECCION PACKS -->
+
+        <section class="seccion seccion__packs" id="packs">
+            <h2 class="seccion__titulo">Packs</h2>
+            <p class="titulo-pasos-packs">Para ver el pack sugerido según tu tipo de piel: </p>
+            <ol>
+                <li class="pasos-packs">Elegí tu <span>tipo de piel</span>haciendo click en <span>Piel Normal,
+                        Piel Seca o Piel Grasa.</span></li>
+                <li class="pasos-packs">Elegí si tenés <span>Piel Sensible.</span></li>
+                <li class="pasos-packs">Elegí si tenés <span>Piel Rosácea.</span><span class="nota-packs">NOTA: la Piel
+                        Rosácea es también Piel Sensible, si elegís esta opción se marcará como elegida la opción "Piel
+                        Sensible"</span></li>
+                <li class="pasos-packs">Hacé click en "Ver
+                    Tratamientos"</li>
+            </ol>
+            <div class="contenedor-tipo-de-piel">
+
+                <!-- CARDS ELECCION TIPO DE PIEL -->
+
+                <div class="card-lado-piel-normal">
+                    <button class="btn-normal">¿Piel normal?</button>
+                </div>
+
+                <div class="card-lado-piel-seca">
+                    <button class="btn-seca">¿Piel seca?</button>
+                </div>
+
+                <div class="card-lado-piel-grasa">
+                    <button class="btn-grasa">¿Piel grasa?</button>
+                </div>
+
+                <!-- CARD PIEL SENSIBLE -->
+
+                <div class="card-lado-piel-sensible">
+                    <button class="btn-sensible">¿Piel sensible?</button>
+                </div>
+
+                <!-- CARD PIEL ROSACEA -->
+
+                <div class="card-lado-piel-rosacea">
+                    <button class="btn-rosacea">¿Piel rosacea?</button>
+                </div>
+            </div>
+
+            <div class="contenedor-ver-packs">
+                <button class="btn btn--lonely" id="btn-packs">Ver Pack Sugerido</button>
+                <!-- CONTENEDOR PARA MOSTRAR PACKS -->
+                <div class="contenedor__muestra-packs contenedor-oculto">
+                    <button id="btn-cerrar-pack"><i class="fas fa-times-circle"></i></button>
+                    <div id="pack" class="card-tratamiento-sugerido">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCION TRATAMIENTOS -->
+
+        <section class="seccion seccion__tratamientos" id="tratamientos">
+            <h2 class="seccion__titulo">tratamientos</h2>
+            <div class="contenedor-botones">
+                <button class="btn" id="btn-corporal">Tratamientos Corporales</button>
+                <button class="btn" id="btn-facial">Tratamientos Faciales</button>
+                <button class="btn" id="btn-makeup">Tratamientos Makeup</button>
+            </div>
+            <div class="contenedor-tratamientos contenedor-oculto">
+                <button id="btn-cerrar-tratamientos"><i class="fas fa-times-circle"></i></button>
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+
+        <section class="seccion seccion__contacto" id="contacto">
+            <h2 class="seccion__titulo">Contacto</h2>
+            <div class="contenedor-contacto">
+                <form id="formulario-contacto" action="" method="POST" enctype="application/x-www-form-urlencoded"
+                    name="contacto-web">
+                    <!-- NOMBRE -->
+                    <div class="contenedor-input">
+                        <input class="contacto__input" type="text" name="nombre" id="nombre" autocomplete="off"
+                            placeholder=" NOMBRE">
+                        <i class="fas fa-check validacion-contacto" id="validacion-nombre"></i>
+                        <p class="error-contacto" id="error-nombre"></p>
+                    </div>
+                    <!-- APELLIDO -->
+                    <div class="contenedor-input">
+                        <input class="contacto__input" type="text" name="apellido" id="apellido" autocomplete="off"
+                            placeholder=" APELLIDO"><br>
+                        <i class="fas fa-check validacion-contacto" id="validacion-apellido"></i>
+                        <p class="error-contacto" id="error-apellido"></p>
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="contenedor-input">
+                        <input class="contacto__input" type="email" name="email" id="email" autocomplete="off"
+                            placeholder=" @"><br>
+                        <i class="fas fa-check validacion-contacto" id="validacion-email"></i>
+                        <p class="error-contacto" id="error-email">
+                        </p>
+                    </div>
+                    <!-- TELEFONO -->
+                    <div class="contenedor-input">
+                        <input class="contacto__input" type="tel" name="telefono" id="telefono" autocomplete="off"
+                            maxlength="14" placeholder="ej: 11 6523-6523"><br>
+                        <i class="fas fa-check validacion-contacto" id="validacion-telefono"></i>
+                        <p class="error-contacto" id="error-telefono"></p>
+                    </div>
+                    <!-- CONSULTA -->
+                    <div class="contenedor-input">
+                        <textarea class="contacto__input contacto__input--consulta" name="consulta" id="consulta"
+                            placeholder=" Escribe tu consulta"></textarea><br>
+                        <i class="fas fa-check validacion-contacto validacion-contacto--select"
+                            id="validacion-consulta"></i>
+                        <p class="error-contacto" id="error-consulta"></p>
+                    </div>
+                    <!-- SUSCRIPCION -->
+                    <div class="contenedor-input contenedor-input-suscripcion">
+                        <label for="promociones" class="contacto__datos contacto__datos--suscripcion">QUIERO
+                            SUSCRIBIRME</label>
+                        <input type="checkbox" id="quiero-promociones" class="contacto__input contacto__input--checkbox"
+                            checked><br>
+                    </div>
+                    <!-- ERROR FORMULARIO INCOMPLETO -->
+                    <p class="error-contacto" id="error-complete-formulario"></p>
+                    <!-- SUBMIT -->
+                    <input class="boton boton__link boton__link--mt" type="submit" value="Enviar consulta">
+                    <!-- RESET -->
+                    <input class="boton boton__link boton__link--mt" type="reset" value="Limpiar formulario"><br><br>
+                </form>
+            </div>
+        </section>
+
+        <!-- LOGO FIJO DE WHATSAPP -->
+
+        <div id="div-whatsapp">
+            <a class="boton__whatsapp" id="whatsapp" target="_blank"
+                href="https://api.whatsapp.com/send?phone=5491158759917&text=¡Hola!%20Tengo%20una%20consulta%20sobre..."><i
+                    class="fab fa-whatsapp m-1 boton__whatsapp--logo" title="Whatsapp link"></i></a>
+        </div>
+
+        <!-- MODAL CARRITO DE COMPRAS -->
+
+        <div class="contenedor__modal-carrito">
+            <div class="modal__carrito">
+                <p>Carrito de compras</p>
+                <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
+                <div id="contenedor__carrito">
+                    <!-- llenar con productos -->
+                </div>
+                <p class="precio">Precio total: $<span id="precio-total"></span></p>
+                <button class="btn" id="btn-comprar-carrito">Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <a href="./index.html" class="footer__link footer__link--titulo" title="ir al inicio">MUY VOS by Marisel</a>
+        </div>
+        <div class="footer__contenedor">
+            <a href="https://api.whatsapp.com/send?phone=5491158759917&text=¡Hola!%20Tengo%20una%20consulta%20sobre..."
+                target="_blank" class="footer__link footer__link-redes" title="Whatsapp link"><i
+                    class="fab fa-whatsapp m-1"></i></a>
+            <a href="https://instagram.com/muyvoskin" target="_blank" class="footer__link footer__link-redes"
+                title="Instagram link"><i class="fab fa-instagram m-1"></i></a>
+            <a href="mailto:" target="_blank" class="footer__link footer__link-redes"><i class="fab fa-facebook-square"
+                    title="Facebook link"></i></a>
+        </div>
+        <div class="footer__contenedor footer__copyright">
+            <p class="footer__copyright--p">Copyright © | 2021 | MUY VOS SKIN AND MAKEUP | Todos los Derechos
+                Reservados. Diseñado por <a href="https://github.com/AnaliaMarrollo" target="_blank"
+                    class="footer__link">Analía
+                    Marrollo ♥</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
